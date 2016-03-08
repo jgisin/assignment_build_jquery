@@ -7,20 +7,11 @@ function FooConstructor(){
 }
 
 function BarConstructor() {
+  this.prop = "LOL";
+  this.meth = function(){console.log("hi")};
     if(!(this instanceof BarConstructor)){
       return new BarConstructor()
-    } else {
-      return {
-        foo: "bar",
-        bar_method: function(){"BAR!"}
-      }
-    }
-    else{
-      return{
-        foo: "bar",
-        bar_method: function(){"BAR!"}
-      }
-    }
+    };
 }
 
 var foo = new FooConstructor();
