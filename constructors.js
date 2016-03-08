@@ -7,10 +7,14 @@ function FooConstructor(){
 }
 
 function BarConstructor() {
-    this.foo = "bar";
-    this.bar_method = function(){"BAR!"};
     if(!(this instanceof BarConstructor)){
       return new BarConstructor()
+    }
+    else{
+      return{
+        foo: "bar",
+        bar_method: function(){"BAR!"}
+      }
     }
 }
 
