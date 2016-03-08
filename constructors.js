@@ -9,6 +9,11 @@ function FooConstructor(){
 function BarConstructor() {
     if(!(this instanceof BarConstructor)){
       return new BarConstructor()
+    } else {
+      return {
+        foo: "bar",
+        bar_method: function(){"BAR!"}
+      }
     }
     else{
       return{
