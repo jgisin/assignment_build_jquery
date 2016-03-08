@@ -1,0 +1,3 @@
+function SimpleObject() {
+  collection: 
+}
