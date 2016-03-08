@@ -1,11 +1,11 @@
 var jquery = function(arg){
   if(arg[0] === "."){
-    document.getElementsByClassName(arg)
+    document.getElementsByClassName(arg);
   }
   else if(arg[0] === "#"){
-    document.getElementById(arg)
+    document.getElementById(arg;
   }
   else{
-    document.getElementsByTagName(arg)
-  }
+    document.getElementsByTagName(arg);
+  };
 }
