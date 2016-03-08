@@ -36,11 +36,14 @@ function jquery(arg) {
   };
 
   this.hasClass = function(arg){
-    this.each(function(element){
+    return this.each(function(element){
+      var boo = false
       if ( element.className === arg ) {
-        return true;
+        boo = true
       }
+      return boo
     })
+
   };
 
 
